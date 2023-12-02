@@ -7,6 +7,10 @@
 
 Enhance your penetration testing efficiency with Tabby and a set of essential Kali tools. This guide includes steps for installing Tabby, configuring Quick Commands plugin, and installing additional penetration testing tools in Kali.
 
+<p align="center">
+  <img src="[https://profile-counter.glitch.me/pentestfunctions/count.svg](https://github.com/pentestfunctions/Windows-Terminal-Upgrade/blob/main/static/quick.gif)">
+</p>
+
 ## Installation
 
 ### Tabby
