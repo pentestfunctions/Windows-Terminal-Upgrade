@@ -1,0 +1,487 @@
+version: 7
+profiles: []
+groups: []
+configSync:
+  parts: {}
+hotkeys:
+  toggle-window:
+    - Ctrl-Space
+  copy-current-path: []
+  ctrl-c:
+    - Ctrl-C
+  copy:
+    - Ctrl-Shift-C
+  paste:
+    - Ctrl-Shift-V
+    - Shift-Insert
+  select-all:
+    - Ctrl-Shift-A
+  clear: []
+  zoom-in:
+    - Ctrl-=
+    - Ctrl-Shift-=
+  zoom-out:
+    - Ctrl--
+    - Ctrl-Shift--
+  reset-zoom:
+    - Ctrl-0
+  home:
+    - Home
+  end:
+    - End
+  previous-word:
+    - Ctrl-Left
+  next-word:
+    - Ctrl-Right
+  delete-previous-word:
+    - Ctrl-Backspace
+  delete-line:
+    - Ctrl-Shift-Backspace
+  delete-next-word:
+    - Ctrl-Delete
+  search:
+    - Ctrl-Shift-F
+  pane-focus-all:
+    - Ctrl-Shift-I
+  focus-all-tabs:
+    - Ctrl-Alt-Shift-I
+  scroll-to-top:
+    - Ctrl-PageUp
+  scroll-up:
+    - Alt-PageUp
+  scroll-down:
+    - Alt-PageDown
+  scroll-to-bottom:
+    - Ctrl-PageDown
+  restart-telnet-session: []
+  restart-ssh-session: []
+  launch-winscp: []
+  settings-tab: {}
+  settings:
+    - Ctrl-,
+  serial:
+    - Alt-K
+  restart-serial-session: []
+  new-tab:
+    - Ctrl-Shift-T
+  new-window:
+    - Ctrl-Shift-N
+  qc:
+    - Alt-Q
+  profile: {}
+  profile-selectors: {}
+  toggle-fullscreen:
+    - F11
+    - Alt-Enter
+  close-tab:
+    - Ctrl-Shift-W
+  reopen-tab:
+    - Ctrl-Shift-Z
+  toggle-last-tab: []
+  rename-tab:
+    - Ctrl-Shift-R
+  next-tab:
+    - Ctrl-Shift-Right
+    - Ctrl-Tab
+  previous-tab:
+    - Ctrl-Shift-Left
+    - Ctrl-Shift-Tab
+  move-tab-left:
+    - Ctrl-Shift-PageUp
+  move-tab-right:
+    - Ctrl-Shift-PageDown
+  rearrange-panes:
+    - Ctrl-Shift
+  duplicate-tab: []
+  restart-tab: []
+  reconnect-tab: []
+  disconnect-tab: []
+  explode-tab:
+    - Ctrl-Shift-.
+  combine-tabs:
+    - Ctrl-Shift-,
+  tab-1:
+    - Alt-1
+  tab-2:
+    - Alt-2
+  tab-3:
+    - Alt-3
+  tab-4:
+    - Alt-4
+  tab-5:
+    - Alt-5
+  tab-6:
+    - Alt-6
+  tab-7:
+    - Alt-7
+  tab-8:
+    - Alt-8
+  tab-9:
+    - Alt-9
+  tab-10:
+    - Alt-0
+  tab-11: []
+  tab-12: []
+  tab-13: []
+  tab-14: []
+  tab-15: []
+  tab-16: []
+  tab-17: []
+  tab-18: []
+  tab-19: []
+  tab-20: []
+  split-right:
+    - Ctrl-Shift-S
+  split-bottom:
+    - Ctrl-Shift-D
+  split-left: []
+  split-top: []
+  pane-nav-right:
+    - Ctrl-Alt-Right
+  pane-nav-down:
+    - Ctrl-Alt-Down
+  pane-nav-up:
+    - Ctrl-Alt-Up
+  pane-nav-left:
+    - Ctrl-Alt-Left
+  pane-nav-previous:
+    - Ctrl-Alt-[
+  pane-nav-next:
+    - Ctrl-Alt-]
+  pane-nav-1: []
+  pane-nav-2: []
+  pane-nav-3: []
+  pane-nav-4: []
+  pane-nav-5: []
+  pane-nav-6: []
+  pane-nav-7: []
+  pane-nav-8: []
+  pane-nav-9: []
+  pane-maximize:
+    - Ctrl-Alt-Enter
+  close-pane: []
+  pane-increase-vertical: []
+  pane-decrease-vertical: []
+  pane-increase-horizontal: []
+  pane-decrease-horizontal: []
+  switch-profile:
+    - Ctrl-Alt-T
+  profile-selector:
+    - Ctrl-Shift-E
+  command-selector:
+    - Ctrl-Shift-P
+  toggle-clippy: []
+  quick-restart:
+    - Ctrl-R
+terminal:
+  searchOptions: {}
+  colorScheme:
+    name: Tabby Default
+    foreground: '#cacaca'
+    background: '#171717'
+    cursor: '#bbbbbb'
+    colors:
+      - '#000000'
+      - '#ff615a'
+      - '#b1e969'
+      - '#ebd99c'
+      - '#5da9f6'
+      - '#e86aff'
+      - '#82fff7'
+      - '#dedacf'
+      - '#313131'
+      - '#f58c80'
+      - '#ddf88f'
+      - '#eee5b2'
+      - '#a5c7ff'
+      - '#ddaaff'
+      - '#b7fff9'
+      - '#ffffff'
+  customColorSchemes: []
+  font: AnonymicePro Nerd Font
+  profile: local:wsl-kali-linux
+ssh: {}
+clickableLinks: {}
+accessibility: {}
+appearance: {}
+hacks: {}
+providerBlacklist: []
+commandBlacklist: []
+enableAnalytics: false
+enableWelcomeTab: false
+qc:
+  cmds:
+    - name: Clear the screen
+      text: clear
+      appendCR: false
+      group: Default Commands
+    - name: Set Target Variable
+      text: >-
+        clear && target=$(zenity --entry --text 'What is your target?' --title
+        'Set Target Variable')
+
+        echo 'You have chosen: $target'
+      appendCR: false
+      group: Default Commands
+    - name: Host penetration testing directory
+      text: clear && cd /var/www/html && sudo python3 -m http.server 80
+      appendCR: true
+      group: Default Commands
+    - name: Netcat Listener
+      text: >-
+        clear && port=$(zenity --entry --text 'What local port would you like to
+        listen on for netcat?' --title 'Set Port Variable') && clear && echo
+        'You have chosen: $port' && nc -lvnp $port
+      appendCR: true
+      group: Default Commands
+    - name: Check Everything is Installed
+      text: >
+        clear && programs=('zenity' 'python3' 'nc' 'nmap' 'rustscan' 'wfuzz'
+        'curl' 'httpx' 'whatweb' 'wafw00f' 'wpscan' 'dirsearch' 'gobuster'
+        'hydra' 'wget' 'enum4linux' 'dig');  wordlists=('/usr/share/hosting'
+        '/usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt'
+        '/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt'
+        '/usr/share/wordlists/rockyou.txt');  result='';  for program in
+        "${programs[@]}"; do 
+          if command -v $program > /dev/null 2>&1; then 
+            result="$result\\n\\e[32m$program is installed.\\e[0m";  # Green for installed
+          else 
+            result="$result\\n\\e[31m$program is NOT installed.\\e[0m";  # Red for not installed
+          fi; 
+        done;  for wordlist in "${wordlists[@]}"; do 
+          if [ -e $wordlist ]; then 
+            result="$result\\n\\e[32m$wordlist exists.\\e[0m";  # Green for exists
+          else 
+            result="$result\\n\\e[31m$wordlist does NOT exist.\\e[0m";  # Red for does not exist
+          fi; 
+        done;  clear;  echo -e "$result"
+      appendCR: false
+      group: Default Commands
+    - name: Long form general enumeration
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && sudo nmap -vv -Pn -A -sC -sS -T 4
+        -p- $target
+      appendCR: true
+      group: Port Scanning
+    - name: Verbose, syn, all ports, all scripts, no ping
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && sudo nmap -v -sS -A -T4 $target
+      appendCR: true
+      group: Port Scanning
+    - name: Identify ports on target
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && echo 'Running Rustscan Now...' &&
+        targetports=$(rustscan -g -a $target | cut -f 2 -d '[' | cut -f 1 -d
+        ']')
+
+        echo $targetports
+      appendCR: true
+      group: Port Scanning
+    - name: Quick Port Scan
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && nmap -F $target
+      appendCR: true
+      group: Port Scanning
+    - name: Wfuzz Brute subdomains
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && wfuzz -v -c -w
+        /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -Z
+        -H 'Host: FUZZ.$target' http://$target
+      appendCR: false
+      group: Subdomain Scanning
+    - name: Retrieve Subdomains
+      text: >-
+        clear && target=$(zenity --entry --text 'What is your target?' --title
+        'Set Target Variable') && echo 'You have chosen: $target' && [[ -n
+        '$target' ]] && curl -s
+        'https://web.archive.org/cdx/search/cdx?url=*.$target&output=xml&fl=original&collapse=urlkey'
+        | grep -oP 'https?://[^/]*' | sort -u | httpx -u $target -title
+        -tech-detect -status-code -cl -ct -location -rt -lc -wc -server -method
+        -ip -cname -cdn -probe -silent
+      appendCR: false
+      group: Subdomain Scanning
+    - name: Httpx
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && httpx -u $target -title -tech-detect
+        -status-code -cl -ct -location -rt -lc -wc -server -method -ip -cname
+        -cdn -probe  -silent
+      appendCR: false
+      group: CMS scanning
+    - name: Whatweb
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && whatweb $target
+      appendCR: false
+      group: CMS scanning
+    - name: Wafw00f
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && wafw00f $target
+      appendCR: false
+      group: CMS scanning
+    - name: Wordpress/Wpscan
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && wpscan --url http://$target
+        --enumerate u,vp,vt
+      appendCR: true
+      group: CMS scanning
+    - name: Quick Directory Scan
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && dirsearch -u $target -w
+        /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -q -x 404
+        --exit-on-error -t 20 --exclude-subdirs=js,css
+      appendCR: false
+      group: Directory scanning
+    - name: Dirsearch complex
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && dirsearch -u $target -w
+        /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -f -e
+        php,tar.gz,config,conf,zip,rar,txt,sh,py -H 'X-Custom-IP-Authorization:
+        127.0.0.1'
+      appendCR: false
+      group: Directory scanning
+    - name: Gobuster
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && gobuster dir --wordlist
+        /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u
+        http://$target -x php,txt,html,sh,cgi
+      appendCR: false
+      group: Directory scanning
+    - name: Hydra Commands
+      text: >-
+        clear && echo -e 'hydra -l root -P passwords.txt -t 32 $target ftp'
+
+        echo -e 'hydra -L usernames.txt -P pass.txt $target mysql'
+
+        echo -e 'hydra -l Administrator -P words.txt $target smb -t 1'
+
+        echo -e 'hydra -l root -P /usr/share/wordlists/rockyou.txt $target smtp
+        -V'
+
+        echo -e 'hydra -l root -P /usr/share/wordlists/rockyou.txt -t 32 $target
+        ssh'
+
+        echo -e 'hydra -l root -P /usr/share/wordlists/rockyou.txt -t 32 $target
+        telnet'
+
+        echo -e 'hydra -L /root/Desktop/usernames.txt –P /root/Desktop/pass.txt
+        -s <PORT> $target vnc'
+      appendCR: true
+      group: Bruteforce
+    - name: FTP anonymous download
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && wget -m
+        ftp://anonymous:anonymous@$target
+      appendCR: false
+      group: FTP/SMB
+    - name: SMB enumeration (Enum4Linux)
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && enum4linux -a $target
+      appendCR: false
+      group: Penetration Testing
+    - name: Dig DNS information
+      text: >-
+        clear && [ -z '$target' ] && target=$(zenity --entry --text 'What is
+        your target?' --title 'Set Target Variable') && echo 'You have chosen:
+        $target'; [ -n '$target' ] && clear && dig $target
+      appendCR: false
+      group: DNS INFO
+    - name: Base64 Decode
+      text: >-
+        clear && hash=$(zenity --entry --text 'Enter your base64-encoded data:'
+        --title 'Base64 Decode'); echo 'You have entered: '$hash;
+        decoded_data=$(echo $hash | base64 --decode); clear; echo 'Decoded data:
+        '$decoded_data
+      appendCR: false
+      group: Decoding
+    - name: Base32 Decode
+      text: >-
+        clear && encoded_data=$(zenity --entry --text 'Enter your base32-encoded
+        data:' --title 'Base32 Decode'); echo 'You have entered: $encoded_data';
+        decoded_data=$(echo '$encoded_data' | base32 --decode); clear; echo
+        'Decoded data: $decoded_data
+      appendCR: false
+      group: Decoding
+    - name: Base58 Decode
+      text: >-
+        clear && encoded_data=$(zenity --entry --text 'Enter your base58-encoded
+        data:' --title 'Base58 Decode'); echo 'You have entered: $encoded_data';
+        decoded_data=$(echo '$encoded_data' | base58 --decode); clear; echo
+        'Decoded data: '$decoded_data
+      appendCR: false
+      group: Decoding
+    - name: Base85 Decode
+      text: >-
+        clear && encoded_data=$(zenity --entry --text 'Enter your base85
+        (Ascii85)-encoded data:' --title 'Base85 Decode'); echo 'You have
+        entered: $encoded_data'; decoded_data=$(echo '$encoded_data' | base85
+        --decode); clear; echo 'Decoded data: '$decoded_data
+      appendCR: false
+      group: Decoding
+    - name: URL Decode
+      text: >-
+        clear && encoded_url=$(zenity --entry --text 'Enter the URL-encoded
+        string:' --title 'URL Decode'); echo 'You have entered: $encoded_url';
+        decoded_url=$(echo '$encoded_url' | urldecode); clear; echo 'Decoded
+        URL: '$decoded_url
+      appendCR: false
+      group: Decoding
+    - name: Hex Decode
+      text: >-
+        clear && hex_string=$(zenity --entry --text 'Enter your hex-encoded
+        string:' --title 'Hex Decode'); echo 'You have entered: $hex_string';
+        decoded_string=$(echo '$hex_string' | xxd -r -p); clear; echo 'Decoded
+        string: '$decoded_string
+      appendCR: false
+      group: Decoding
+    - name: ROT13 Decode
+      text: >-
+        clear && rot13_string=$(zenity --entry --text 'Enter your ROT13-encoded
+        string:' --title 'ROT13 Decode'); echo 'You have entered:
+        $rot13_string'; decoded_string=$(echo '$rot13_string' | tr 'A-Za-z'
+        'N-ZA-Mn-za-m'); clear; echo 'Decoded string: '$decoded_string
+      appendCR: false
+      group: Decoding
+    - name: AES Decrypt
+      text: >-
+        clear && encrypted_data=$(zenity --entry --text 'Enter your
+        AES-encrypted data in base64:' --title 'AES Decrypt'); password=$(zenity
+        --password --text 'Enter decryption password:'); echo 'You have entered
+        encrypted data: $encrypted_data'; decrypted_data=$(echo
+        '$encrypted_data' | base64 --decode | openssl aes-256-cbc -d -a -pass
+        pass:$password); clear; echo 'Decrypted data: '$decrypted_data
+      appendCR: false
+      group: Decoding
+pluginBlacklist: []
+profileDefaults:
+  ssh:
+    disableDynamicTitle: true
+profileBlacklist: []
+clippyPlugin:
+  agent: Bonzi
