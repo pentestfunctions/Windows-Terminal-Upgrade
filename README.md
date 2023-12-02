@@ -35,6 +35,12 @@ sudo apt-get install dirbuster
 sudo gunzip /usr/share/wordlists/rockyou.txt.tz
 ```
 
+
+## Graphical Fix
+If you have the graphical problem as shown in the gif above, run the provided graphicalfix.bat file and it will fix itself. 
+- Solution provided based on https://github.com/microsoft/wslg/issues/1148
+
+
 ## Quick Commands Configuration
 Configure Quick Commands for efficient testing:
 - [Quick Commands Config](https://github.com/pentestfunctions/Windows-Terminal-Upgrade)
