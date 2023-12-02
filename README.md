@@ -31,14 +31,14 @@ Configure each new tab in Tabby:
 
 ## Kali Tools Installation
 Install additional tools for Kali:
-\```bash
+```bash
 wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb -O ~/Downloads/rustscan_2.0.1_amd64.deb
 sudo dpkg -i ~/Downloads/rustscan_2.0.1_amd64.deb
 sudo apt install gobuster
 sudo apt install wordlists
 sudo apt-get install dirbuster
 sudo gunzip /usr/share/wordlists/rockyou.txt.tz
-\```
+```
 
 ## Quick Commands Configuration
 Configure Quick Commands for efficient testing:
@@ -47,12 +47,12 @@ Configure Quick Commands for efficient testing:
 <details>
 <summary>Sample Commands</summary>
 
-\```yaml
+```yaml
 qc:
   cmds:
     - name: Clear the screen
       text: clear
       ...
-\```
+```
 
 </details>
