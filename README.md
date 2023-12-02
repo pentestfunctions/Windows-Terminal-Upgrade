@@ -1,9 +1,6 @@
 # Tabby with Quick Commands plugin and Kali Tool Installation
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Eugeny/tabby)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Eugeny/tabby/CI)
-![GitHub](https://img.shields.io/github/license/Eugeny/tabby)
-![GitHub last commit](https://img.shields.io/github/last-commit/Eugeny/tabby)
+![GitHub last commit](https://img.shields.io/github/last-commit/pentestfunctions/Windows-Terminal-Upgrade/)
 
 Enhance your penetration testing efficiency with Tabby and a set of essential Kali tools. This guide includes steps for installing Tabby, configuring Quick Commands plugin, and installing additional penetration testing tools in Kali.
 
